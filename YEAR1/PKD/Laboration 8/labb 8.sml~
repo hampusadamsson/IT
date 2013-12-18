@@ -1,0 +1,2 @@
+fun length [] = 0
+| length (first::rest) = 1+length rest;

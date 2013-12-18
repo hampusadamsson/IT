@@ -1,0 +1,44 @@
+(* PROGRAMKONSTRUKTION OCH DATASTRUKTURER
+   INLÄMNINGSUPPGIFT 2 
+   Förtfarttare: Philip Åkerfeldt & 
+   Datum:
+   Inlämning: 1
+*)
+
+(* REPRESENTATION CONVENTION: 
+   REPRESENTATION INVARIANT:
+*)
+datatype rectangle = Rect of int * int * int * int
+
+
+(* REPRESENTATION CONVENTION: 
+   REPRESENTATION INVARIANT:
+*)
+datatype quadTree = EmptyQuadTree |
+Qt of rectangle * rectangle list * rectangle list *
+quadTree * quadTree * quadTree * quadTree
+
+
+(* emptyQtree e
+TYPE: (int * int * int * int) -> 
+PRE:
+POST: Ett tomt quadträd med ytan e 
+EXAMPLE:
+*)
+fun emptyQtree (e) = Qt(e, [], [],EmptyQuadTree,EmptyQuadTree,EmptyQuadTree,EmptyQuadTree);  
+
+(* insert (q, r)
+TYPE: 
+PRE: Alla punkter av r finns i quadträdet q.
+POST: Quadträdet q med rektangeln r insatt.
+EXAMPLE:
+*)
+(*fun insert (q,r) = *)
+
+
+(* query (q, x, y)
+TYPE:
+PRE:
+POST: Lista av rektanglarna med koordinaterna x,y från quadträdet q.  
+EXAMPLE:
+*)

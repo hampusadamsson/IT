@@ -1,0 +1,65 @@
+abbbabbaaa  -> filen
+
+[a = 0 , b = 1]
+
+1. p = "a", filen = bbbabbaaa. p = output = 0
+2. c = "b"
+3. p^c = "ab", spara i ordboken, [a = 0 , b = 1, ab = 2]
+
+BÖRJA OM
+1. p = "b", filen = bbabbaaa. p = output = 1
+2. c = "b"
+3. p^c = "bb". Sparas i ordboken [a = 0 , b = 1, ab = 2, bb = 3]
+
+BÖRJA OM
+1. p = "bb", filen = abbaaa. p = output = 2
+2. c = "a"
+3. p^c = "bba". Sparas i ordboken [a = 0 , b = 1, ab = 2, bb = 3, bba = 4]
+
+BÖRJA OM
+1. p = "ab", filen = baaa. p = output = 3
+2. c = "b"
+3. p^c = "abb". Sparas i ordboken [a = 0 , b = 1, ab = 2, bb = 3, bba = 4, abb = 5]
+
+BÖRJA OM
+1. p = "b", filen = aaa. p = output = 1
+2. c = "a"
+3. p^c = "ba". Sparas i ordboken [a = 0 , b = 1, ab = 2, bb = 3, bba = 4, abb = 5, ba = 6]
+
+BÖRJA OM
+1. p = "a", filen = aa. p = output = 0
+2. c = "a"
+3. p^c = "aa". Sparas i ordboken [a = 0 , b = 1, ab = 2, bb = 3, bba = 4, abb = 5, ba = 6, aa = 7]
+
+BÖRJA OM
+1. p = "aa" = 7
+2. c = ""
+3. p^c = "aa". Kontroll, om (p^c) finns i ordboken -> spara inte
+
+
+0123107
+
+(* compress f d
+TYPE: instream -> int list
+PRE : f är sökvägen till en fil som finns och läsbar samt endast innehåller tecken i ordboken d. 
+POST: returnerar innhållet i filen f som en kodsekvens (av heltal i en lista) 
+*)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

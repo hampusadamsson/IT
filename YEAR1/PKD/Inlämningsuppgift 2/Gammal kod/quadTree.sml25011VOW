@@ -1,0 +1,98 @@
+(* PROGRAMKONSTRUKTION OCH DATASTRUKTURER
+   INLÄMNINGSUPPGIFT 2 
+   Förtfarttare: Philip Åkerfeldt
+   Datum:
+   Inlämning: 1
+*)
+
+(* REPRESENTATION CONVENTION: 
+   REPRESENTATION INVARIANT:
+*)
+datatype rectangle = Rect of int * int * int * int
+
+
+(* REPRESENTATION CONVENTION: 
+   REPRESENTATION INVARIANT: ingen
+*)
+datatype quadTree = EmptyQuadTree |
+Qt of rectangle * rectangle list * rectangle list *
+quadTree * quadTree * quadTree * quadTree
+
+
+(* emptyQtree e
+TYPE: rectrangle -> quadTree 
+PRE:
+POST: Ett tomt quadträd med ytan e 
+EXAMPLE:
+VARIANT:
+*)
+fun emptyQtree (e) = Qt(e, [], [],EmptyQuadTree,EmptyQuadTree,EmptyQuadTree,EmptyQuadTree);  
+
+(* insert (q, r)
+TYPE: quadTree * rectangle -> quadTree
+PRE: Alla punkter av r finns i quadträdet q.
+POST: Quadträdet q med rektangeln r insatt.
+EXAMPLE:
+VARIANT:
+*)
+
+
+fun insert (Qt(Extent as Rect(eLeft,eTop,eRight, eBottom),H, V, tL, tR, bL, bR), r as Rect(rLeft,rTop,rRight,rBottom))=
+let
+
+val VA = ((eLeft + eRight) div 2)
+val HA = ((eTop + eBottom) div 2)
+
+in
+
+    if rLeft <= VA andalso rRight > VA then
+	Qt(Extent, H, V::r, tL, tR, bL, bR)
+    else if rBottom <= HA andalso rTop > HA then
+	Qt(Extent, H::r,V, tL, tR, bL, bR)
+    else
+	if rRight < VA andalso rBottom > HA then
+	    if  tL = EmptyQuadTree then
+		Qt(Extent, H, V, insert(emptyQtree Rect(eLeft, eTop, VA, HA), r), tR, bL, bR)
+	    else
+		Qt(Extent, H, V, insert(Qt(tL), r), tR, bL, bR)
+	else if rLeft > VA andalso rBottom > HA then
+	    if tR = EmptyQuadTree then
+		Qt(Extent, H, V, tL, insert(emptyQtree Rect(VA , eTop, eRight, HA), r), bL, bR)
+	    else
+		Qt(Extent, H, V, tL, insert(Qt(tR), r), bL, bR)
+	else if rTop < HA andalso rRight < VA then
+	    if bL = EmptyQuadTree then
+		Qt(Extent, H, V, tL, tR, insert(emptyQtree Rect(eLeft, HA, VA, eBottom), r), bR)
+	    else
+		Qt(Extent, H, V, tL, tR, insert(Qt(bL), r), bR)
+	else 
+	    if bR = EmptyQuadTree then
+		Qt(Extent, H, V, tL, tR, bL, insert(emptyQtree Rect(VA, HA, eRight, eBottom),r))
+	    else
+		Qt(Extent, H, V, tL, tR, bL, insert(Qt(bR), r))
+	
+end;
+  
+   
+(* query' (l,x,y)
+TYPE:
+PRE:
+POST:  
+EXAMPLE:
+VARIANT:
+
+fun query'([],x,y) = [] 
+if 
+
+
+
+(* query (q, x, y)
+TYPE:
+PRE:
+POST: Lista av rektanglarna med koordinaterna x och y från quadträdet q.  
+EXAMPLE:
+VARIANT:
+
+fun query (q,x,y) = 
+*)
+
