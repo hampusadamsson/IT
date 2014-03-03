@@ -1,5 +1,0 @@
-Room 1357; X; X; Room 87; Hallway 4; X; X; True; False
-Hallway 4; X; Room 1357; Hallway 2; Extra Room; X; False; True; True
-Room 87; Room 1357; X; X; Hallway 2; True; X; X; True
-Hallway 2; Hallway 4; Room 87; X; X; True; True; X; X
-Extra Room; X; Hallway 4; X; X; X; True; X; X
