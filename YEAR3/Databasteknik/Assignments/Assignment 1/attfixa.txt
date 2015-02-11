@@ -1,0 +1,4 @@
+* Fixa primary keys
+* fixa kardinaliteter
+* fixa lite kring den första modellen för journal etc
+

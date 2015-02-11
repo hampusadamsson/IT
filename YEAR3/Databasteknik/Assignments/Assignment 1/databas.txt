@@ -1,0 +1,39 @@
+* Quternary structure
+  * Tetriary structure
+  	   - set of atomic positions
+  	   - Type
+	   - 3D coordinates
+	   - numerical value
+	     	       * Secondary structure
+  		       	 - Type
+			   * Sequence of amino acids
+- Length
+
+- Method
+
+* Research paper
+  - Author/s
+  - Submitter
+  - Journal (Enum 'Y', 'N')
+	- ISSN
+	- Name
+	- Publisher
+	- Title
+	- Volume
+	- Issue
+	- Date
+	- Pages
+
+* PubMed citation
+- Article title
+- Abstract
+- Set of chemical names
+- DOI
+- ISSN
+- Volume
+- Issue
+- Pages
+- Publication date
+- Author/s (list)
+- PubMed ID
+ 
