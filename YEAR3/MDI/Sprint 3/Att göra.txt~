@@ -1,0 +1,127 @@
+After that, your first task is: 
+
+1) to set up a scenario for how the evaluated application/artefact can be used. If the design is complex you do not have to make a scenario covering all aspects of usage – choose one that you think will reveal interesting features in the design. 
+
+From this scenario you will: 
+2) derive a Hierarchical Task Analysis, which you will then use as input when 
+
+3) performing a Streamlined Cognitive Walkthrough.
+
+
+
+1. SCENARIO
+Create a credible scenario. You previously read about how to make scenarios in chapter 3 in Designing Interactive Systems (Benyon et al. 2nd and 3rd edition) or corresponding material from other sources. If the evaluated system is very big, you should focus on only one or a few functions in the scenario. Pick the ones where you believe you can highlight the most critical usability problems. This is a necessary constraint to keep the following steps in the analysis within reasonable complexity.
+
+2. HIERARCHICAL TASK ANALYSIS (HTA)
+First read chapter 11 in Designing Interactive Systems (Benyon et al., 2nd and 3rd editions) or corresponding material from other sources, and also TH3 in the course home page. Deriving from your previously created scenario you will create a HTA. In the reading material you will notice that there are slightly different ways of making it. Use the version that you feel give the most information to your next step of evaluation. Many students make the mistake to confuse HTA with a workflow model. Make sure you understand the fundamental difference between them.
+
+3. STREAMLINED COGNITIVE WALKTHROUGH (SCW)
+First read chapter 10 in Designing Interactive Systems (Benyon et al., 2nd and 3rd editions) or corresponding material from other sources. Use the information from your HTA to perform a Streamlined Cognitive Walkthrough (SCW). The main purpose of SCW is to reveal problems with learnability, but it will also reveal whether tasks are possible to perform for a new user, i.e., something about the effectiveness of the system.
+
+When performing a SCW the aim is only to evaluate what exists—your impressions of it. You should not focus on redesign and you should not theorize about problems. If you perceive that there is a problem, then you should note it.
+
+For each interaction that the system requires, in order to complete a subtask, you answer the following two questions (as described in Spencer, 2000):
+
+Will the user know what to do at this step?
+If the user does the right thing, will they know that they did the right thing, and are making progress towards their goal?
+
+4. HEURISTIC EVALUATION (HE)
+A Heuristic Evaluation helps developers check whether unnecessary usability problems exist in a system design. It does not guarantee a problem free product, but properly conducted, the systematic process will reveal the most obvious usability problems. The following 10 paragraphs are cited from Jakob Nielsen (1994). Your task is to carry out an evaluation using these headlines to find problems with the design that you are evaluating.
+
+Visibility of system status
+The system should always keep users informed about what is going on, through appropriate feedback within reasonable time.
+
+Match between system and the real world
+The system should speak the users' language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in a natural and logical order.
+
+User control and freedom
+Users often choose system functions by mistake and will need a clearly marked "emergency exit" to leave the unwanted state without having to go through an extended dialogue. Support undo and redo.
+
+Consistency and standards
+Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform conventions.
+
+Error prevention
+Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action.
+
+Recognition rather than recall
+Minimize the user's memory load by making objects, actions, and options visible. The user should not have to remember information from one part of the dialogue to another. Instructions for use of the system should be visible or easily retrievable whenever appropriate.
+
+Flexibility and efficiency of use
+Accelerators – unseen by the novice user – may often speed up the interaction for the expert user such that the system can cater to both inexperienced and experienced users. Allow users to tailor frequent actions.
+
+Aesthetic and minimalist design
+Dialogues should not contain information which is irrelevant or rarely needed. Every extra unit of information in a dialogue competes with the relevant units of information and diminishes their relative visibility.
+
+Help users recognize, diagnose, and recover from errors
+Error messages should be expressed in plain language (no codes), precisely indicate the problem, and constructively suggest a solution.
+
+Help and documentation
+Even though it is better if the system can be used without documentation, it may be necessary to provide help and documentation. Any such information should be easy to search, focused on the user's task, list concrete steps to be carried out, and not be too large.
+
+5. THINK ALOUD
+You will carry out a Think Aloud user test (Nielsen, 2012) on the redesigned System X. Put very simply, you observe when a representative user tries out some tasks in the prototype of the system, while saying out loud what (s)he is thinking. Read the user analysis in the report in order to understand who the intended users are, and then find a friend who matches the description as closely as possible and whom is willing to be your subject for the study.
+
+6. ETHICAL ANALYSIS
+After having read TH11, answer the following questions:
+
+Will there be any ethical problems or conflicts in the context, in the organisation or in the group where the redesigned System X will be applied and used?
+Will the redesigned System X cause any ethical problems or conflicts?
+Are there any alternative design solutions?
+What groups, individuals, organisations, etc, will in any way be affected by or have a stake in the development, use, application or mere existence of the redesigned System X? (Including society at large and the environment.)
+What values, interests, duties, needs, standpoints and attitudes are involved in the use of the redesigned System X and of its possible alternative designs?
+What effects will the redesigned System X (and the alternatives) have on each of these values? What are the strengths/possibilities and the weaknesses/risks of each design to each value? Will these designs fit certain values while being in conflict with other values? What values and how?
+What can be done to make sure that the use of the redesigned System X will be optimal with regards to ethical aspects? For instance, adapt the design, user training, organizational changes, inform stakeholders, etc? How exactly are you going to succeed with this?
+7. RANKING OF USABILITY PROBLEMS
+Summarize and present the usability problems so that the recipient will understand which ones are most important to fix. You should also state what is particularly good in both the current System X and its redesign, in order to prevent that these features disappear when other aspects are remedied. When ranking usability problems, use the same grading scale as in your first report.
+
+8. REFLECTION
+Finally you should write a brief reflection on the different methods that you have used in your evaluation. Did they provide you with similar results or do they differ from each other? What are the advantages and disadvantages of each method? Which ones do you consider most useful and why?
+
+
+
+
+
+Startsida:
+
+Designförslag 1:
+Bra poäng och detta borde för ett faktum ändras då det strider mot de principerna ni lägger fram som grund. Sen hör det till saken att denna sida inte besöks så ofta när man ska utföra en bokning enligt mig. (har inga belägg för detta utan det är endast min åsikt)
+
+
+Designförslag 2:
+Alla saker är ju biorelaterade. Sen att ett val av omdesign för vissa sektioner är helt klart en bra poäng. Att skilja på reklamen och andra faktorer som är mer relevanta för själva bokningen borde ske. Att skilja på reklamens val av färg vid rubiker och de bokningsrelaterade är en bra poäng och borde ske. 
+
+
+Designförslag 3:
+Bra poäng med att ändra valet av stad. IMO borde den ligga först då det är den första saken som de andra beror på. Dåligt att lägga den sist. Det strider lite mot principerna ni pratar om.
+Det ska vara enkelt och då borde den ligga först. Annars finns risken att man försöker välja biograf och när detta inte är möjligt kan oerfarna användare bli förvirrade vilket är onödigt då det lätt kan undvikas.
+
+Designförslag 4:
+Bra poäng att ha någon slags förklaring för vad färgerna står för. Den kanske borde ligga högre upp så att den förklaringen sker innan en eventuellt sökning av lämplig film sker.
+(HITTA NÅGOT SLAGS BELÄGG FÖR DETTA)
+
+
+Designförslag 5:
+Bra poäng som jag inte tänkt på.
+
+
+Designförslag 6:
+
+
+
+Designförslag 7:
+Kolla över detta förslag och rata det totalt och backa upp ratningen med en massa theoremer, principer och lagar.
+
+- Tappar reklamplatsen
+- Dålig ordning å designen. En adekvat lösning hade kunnat designas efter användares tidigare kunskaper av i vilken ordning man genomför saker och ting. Vanligtvis vill användare börja uppe i högra hörnet och röra sig vidare som om den läser en text. Höger till vänster och vid slut av "rad" hoppar användare ner ett steg och börjar om från höger till vänster varpå denna procedur upprepas.
+
+-Kan bli ett effektivare system för användare som är vana med systemet men kan bli förvirrande och kryptiskt för användare som inte tidigar använt sig av systemet eller om man använder systemet sällan. 
+
+
+
+
+FEL I RAPPORTEN:
+
+* Figurerna är felrefererade
+
+
+

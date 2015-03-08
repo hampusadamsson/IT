@@ -1,0 +1,112 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{fullpage}
+
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{color}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{fontenc}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{multirow}
+
+
+\title{\textbf{EMBEDDED SIGNAL PROCESSING SYSTEMS (course 1TE682) \\
+    Uppsala University -- Spring 2015 \\
+    Report for Project 2  }}
+%%    
+%%\author{	Tim Josefsson\\
+%			\texttt{Tim.Josefsson.@student.uu.se} \\
+%		Philip Åkerfeldt\\
+%			\texttt{Philip.Akerfeldt.4987@student.uu.se}}
+\author{
+Tim Josefsson\\
+\textup{Dept. of Information Technology}\\
+\textup{Uppsala University}\\
+\textup{Uppsala Sweden}\\
+\textup{Tim.Josefsson.9673@student.uu.se}
+\and
+Philip Åkerfeldt\\
+\textup{Dept. of Information Technology}\\
+\textup{Uppsala University}\\
+\textup{Uppsala Sweden}\\
+\textup{Philip.Akerfeldt.4987@student.uu.se}
+}
+
+
+\date{\today}
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\pagebreak
+
+
+\section{Introduction}
+\begin{enumerate}
+\item[•] A short introduction to digital filters and design methods
+\end{enumerate}
+
+DIGITAL FILTERS\\
+In the field of signal processing there are different kinds of filters that can be implemented. One common filter design is the digital filter which is a system that operates mathematically on discrete-time signals in order to either enhance or reduce attributes of the systems input signal. 
+
+Digital filter systems are usually built in a certain way. The system uses an ADC to convert the input signal so that it can be operated upon. The filter is then followed by some components that will for example for storing data for the system. Lastly is the DAC that will convert the signal into a useful output.
+
+There are two different kinds of digital filters; Infinite Impulse Response and Finite Impulse Response which are also referred to as \textit{IIR}-filter and \textit{FIR}-filter respectively.
+
+\textbf{IIR}\\
+Systems which are known as IIR systems or IIR filters are recognized for having an impulse response which, past a certain point, does not become zero but continues indefinitely.\\
+
+\textbf{FIR}\\
+The FIR system, or filter, can be recognized by its impulse response which does become exactly zero at time thus making it have a finite duration.\\ 
+
+\section{Filter design and properties}
+\begin{enumerate}
+\item[•] A detailed description of the filters (e.g., FIR or IIR filters of the different types - low pass, high pass, band pass, or the combination of them, etc.) chosen for the tasks
+\end{enumerate}
+The sound file that was given by the project handler consisted of two types of sound contamination which were describes as noise and interference. The simplest way of handling the two types of contamination to the file was to design two separate filters for each of the them. This method was followed and it produced good results. 
+In order to remove the noise from the given sound file we designed and implemented a FIR filter. We choose the FIR filter since that filter allows us to avoid phase shifting which leads to a smoother output signal.
+The interference of the sound file was handled by implementing a IIR-Notch filter and that specific type of filter was chosen because we simply wanted to handle interference of a specific frequency. A Notch filter is a band-stop filter which means that is leaves most frequencies unaltered. The specific attribute of the Notch filter is that it has a very narrow stopband and this is what gives it the ability to removes specific interfering frequencies. The choice was easy to do since the IIR-Notch filter fits our desired template.  \\
+
+$H(z) =\frac{(z-z_1)(z-z_2)}{(z-p_1)(z-p_2)} = \frac{(z-e^-j\Omega_N)(z-e^j\Omega_N)}{(z-re^-j\Omega_N)(z-re^j\Omega_N)} = \frac{z^2-2z\cos\Omega_N +1}{z^2-2rz\cos\Omega_N + r^2}$
+
+\subsection{Frequency response}
+\begin{enumerate}
+\item[•] The frequency responses of the designed filters and their plots made in MATLAB
+\end{enumerate}
+
+
+\section{Implementation}
+\begin{enumerate}
+\item[•] Implementation of the filters on the embedded system
+\end{enumerate}
+
+
+\section{Results}
+\begin{enumerate}
+\item[•] Results
+\end{enumerate}
+
+\section{Discussion}
+
+\section{Conclusions}
+\begin{enumerate}
+\item[•] Conclusions
+\end{enumerate}
+
+
+
+
+\section{Appendix}
+\begin{enumerate}
+\item[•] C codes (only your own part!) in the appendix 
+\end{enumerate}
+
+
+\end{document}

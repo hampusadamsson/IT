@@ -1,0 +1,56 @@
+After that, your first task is: 
+
+1) to set up a scenario for how the evaluated application/artefact can be used. If the design is complex you do not have to make a scenario covering all aspects of usage – choose one that you think will reveal interesting features in the design. 
+
+From this scenario you will: 
+2) derive a Hierarchical Task Analysis, which you will then use as input when 
+
+3) performing a Streamlined Cognitive Walkthrough.
+
+
+Startsida:
+
+Designförslag 1:
+Bra poäng och detta borde för ett faktum ändras då det strider mot de principerna ni lägger fram som grund. Sen hör det till saken att denna sida inte besöks så ofta när man ska utföra en bokning enligt mig. (har inga belägg för detta utan det är endast min åsikt)
+
+
+Designförslag 2:
+Alla saker är ju biorelaterade. Sen att ett val av omdesign för vissa sektioner är helt klart en bra poäng. Att skilja på reklamen och andra faktorer som är mer relevanta för själva bokningen borde ske. Att skilja på reklamens val av färg vid rubiker och de bokningsrelaterade är en bra poäng och borde ske. 
+
+
+Designförslag 3:
+Bra poäng med att ändra valet av stad. IMO borde den ligga först då det är den första saken som de andra beror på. Dåligt att lägga den sist. Det strider lite mot principerna ni pratar om.
+Det ska vara enkelt och då borde den ligga först. Annars finns risken att man försöker välja biograf och när detta inte är möjligt kan oerfarna användare bli förvirrade vilket är onödigt då det lätt kan undvikas.
+
+Designförslag 4:
+Bra poäng att ha någon slags förklaring för vad färgerna står för. Den kanske borde ligga högre upp så att den förklaringen sker innan en eventuellt sökning av lämplig film sker.
+(HITTA NÅGOT SLAGS BELÄGG FÖR DETTA)
+
+
+Designförslag 5:
+Bra poäng som jag inte tänkt på.
+
+
+Designförslag 6:
+
+
+
+Designförslag 7:
+Kolla över detta förslag och rata det totalt och backa upp ratningen med en massa theoremer, principer och lagar.
+
+- Tappar reklamplatsen
+- Dålig ordning å designen. En adekvat lösning hade kunnat designas efter användares tidigare kunskaper av i vilken ordning man genomför saker och ting. Vanligtvis vill användare börja uppe i högra hörnet och röra sig vidare som om den läser en text. Höger till vänster och vid slut av "rad" hoppar användare ner ett steg och börjar om från höger till vänster varpå denna procedur upprepas.
+
+-Kan bli ett effektivare system för användare som är vana med systemet men kan bli förvirrande och kryptiskt för användare som inte tidigar använt sig av systemet eller om man använder systemet sällan.
+
+- Att denna design inte valdes är bra. Men att den nämndes är därför överflödigt och borde inte finnas med.  
+
+
+
+
+FEL I RAPPORTEN:
+
+* Figurerna är felrefererade
+
+
+

@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+
+
+\title{Report of Doom}
+\author{Oliver Campeau, Mikael Sernheim, Philip \AA kerfeldt \\
+Database Design I,\\
+Uppsala Universitet\\
+}
+\date{\today}
+\maketitle
+\newpage
+
+\section{Introduction}
+The project at hand was given by the Music Department of Uppsala University and it was about the handling of information on musical scores. The Music Dept.’s library has been growing and needs to be restructured and better sorted. We recieved an excel-file which we were promted to use in order to create a relational database. The information was however in need of a better design and updates on some points.
+
+In the report we will describe the actions that have been taken to update the database to a better standard. Our approach was to normalize to BoyceCodd Normal Form and to add new tables in order to reach our goal.
+
+\section{Managing the information}
+The old database was based around an excel-file which contained the information about every score existing in the library. The fields in the tables were: Composer, Life, Title, Publisher, Instruments, New Location and Notes.
+ 
+
+\subsection{Reconstruction of datapresentation}
+After analyzing the old structure we had a few ideas of what to do in order to get a better database up and running. There were for example a lot of empty fields and the instrumental column was unstructured and unconsistent.
+The first thing that was done, after the old structure was analyzed, was creating some basic structural fundaments. For instance we made sure there were no empty fields at all and changed so that the old empty values were changed to NULL.
+The other thing we thought was a bit messy was the instrumental column. There were a lot of inconsistencies so we changed that to a better system where the instruments were in a specific order and this was consistent for all the pieces in the database.   
+
+\section{Creating the database}
+
+\subsection{Functional Dependencies}
+In the following section, we list the functional dependencies of the database. A 
+functional dependency is used to show which entities are needed to access a value. 
+\\
+\begin{tabbing} 
+Score\_table\\
+Score\_ID \= 	$\longrightarrow{Composer\_ID,Title,Publisher,Notes}$
+\\
+Composer\\
+Composer\_ID \=	$\longrightarrow{Name, Surname, Birth, Death}$
+\\
+Instruments\\
+Score\_ID \=	$\longrightarrow{Flutes, Oboes, Clarinets, Bassoons, Horns, Trumpets, Trombones, Tubas, Timpani, Percussions, Harps, I Violin, II Violin, Violas, Celli, Basses}$
+\\
+Locations\\
+Score\_ID \=	$\longrightarrow{{Score\_ID, Location\_1, Location\_2}}$
+\end{tabbing}
+
+
+
+\end {document}
+

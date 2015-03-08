@@ -1,0 +1,597 @@
+%%
+%%  Template for documentation in LaTeX
+%%  Tobias Wrigstad, tobias@dsv.su.se, 2002-11-19
+%%
+%%  Most commands used this sample document should be 
+%%  understandable from how they are used here. They are
+%%  further explained in the document `The not so short
+%%  guide to LaTeX' by Tobias Oetiker.For the benefit 
+%%  of foreign students, the comments in this file will
+%%  be written in English. 
+%%
+\documentclass[a4paper,11pt,twoside,titlepage,openany]{book}
+%%  Declares that the current document shall use the book-template
+%%  which meant that it will have headers, use chapters for partitioning
+%%  the text etc. 
+%%  Target paper size is A4 paper, text is 11 pt if not explicitly 
+%%  altered, it will be printed on two-sided paper and it will use
+%%  a special title page for printing title, author and date. 
+%%  `Openany' specifies that a chapter can begin on both right and left
+%%  pages. 
+
+\usepackage[latin1]{inputenc}
+%%  The use of packages in LaTeX is quite analogous with packages in 
+%%  Java. The input encoding packages enables LaTeX to use non-English
+%%  code pages (teckentabell). In this case latin1, to enable the use
+%%  of Swedish characters such as å, ä, ö and accented characters such
+%%  as é without special treatment. 
+
+\usepackage[swedish]{babel}   %%  Remove when writing in english!
+%%  Load Swedish hyphenation and tell LaTeX that we are writing in 
+%%  Swedish. This makes LaTeX print 'kapitel' instead of 'chapter' etc.
+
+\usepackage[dvips]{graphicx}
+%%  Load support for special graphics, such as UML diagrammes etc. 
+%%  Importing graphics in LaTeX is a little tricky so please assign 
+%%  someone to learn to master it in the beginning of your project. 
+%%  Note that only .EPS-files (encapsulated post script) may be 
+%%  used! 
+
+\usepackage{url}
+%%  Defines the command \url{} that can be used to typeset url:s
+%%  in text
+
+%%  Now we will declare the title and author of this document. 
+
+\title{\LaTeX{} at DSV2:PVT} % set the document's title
+
+\author{Tobias Wrigstad \\ % the \\ command is a line break
+  \texttt{tobias@dsv.su.se}} % \texttt{...} gives typewriter text
+
+\date{\today} % set the document's date to today's date
+
+%%  Here ends the declaration section, the so-called 'preamble'. Now, 
+%%  the document text begins. 
+
+
+\begin{document}
+%%  The beginning of the document 
+%%
+\maketitle
+%%  Print the title, the author and the date
+%%  Since we specified titlepage above, this will be printed on 
+%%  a single page with no other text in the beginning of the document
+
+\chapter{Introduction}
+%%  Declares the beginning of a new chapter. The book-template REQUIRES 
+%%  the use of chapters, otherwise section numbering will be erroneous. 
+%%  Since we specified that the document should be written in swedish, 
+%%  'Kapitel 1' will be printed at the top of the page. 
+
+\section{What is this LaTeX, anyway?}
+%%  No text should be placed outside a section. This generates a section
+%%  head in bold face with section number 1.1 (chapter 1, section 1). 
+
+Now, I can begin to write some text. Note that the text automatically 
+becomes size 11 pt because of the declaration in the preamble. Text is 
+automatically justified (raka höger- och vänstermarginaler) and new
+paragraphs are automatically indented. Note (in the code) how linebreaks 
+and double                               spaces are ignored by \LaTeX{}. 
+
+A new paragraph is started by an empty line in the text. Note the 
+indentation. This is clearly visible from the source code. 
+\emph{N.B. You should read this document in parallel with the source code!}
+
+\subsection{Text formatting}
+%%  Generates a subsection with number 1.1.1
+%%
+Text can be \emph{emphasized} (which more or less means \textit{italicized} 
+in the book template). Text can also be \textbf{bold faced} or in 
+\textsc{Script Capitals} or without serifs i.e. \textsf{sans serif}. 
+
+An easy way to show code snippets is to use the \texttt{verbatim} (note how
+I switched to typewriter text just for one word or phrase) environment: 
+
+%% Begins preformatted text
+\begin{verbatim}
+This text is preformatted, meaning
+that linebreaks
+are 
+    not 
+        ignored as well as 
+double           spaces (%% comments are not ignored)
+\end{verbatim}
+%% Ends preformatted text
+
+In the preformatted text section, text is written exactly as it is typed
+in the source code. Line breaks are \emph{not} automatically inserted when 
+the end of the line is reached. Instead text can flow into the right margin
+or even out of the page! Thus, lines must be broken by hand in the 
+\texttt{verbatim} environment. 
+
+\subsubsection{The next level of sectioning lacks a number} 
+Thus, it will not appear in the table of contents. 
+
+\section{The use of tables}
+First: note how this section's name is showed in the header. All
+pages (except the first page of every chapter and the title page)
+automatically becomes a header with a section name and number.
+
+You may wish to use tables in your project documentations. Tables are
+quite easily created. Below, a simple sample table is shown. For a more 
+comprehensive documentation of how to create tables, see `The not so short 
+guide to \LaTeX'. %% A good exercise: add a reference to that doc here!
+
+The table below is generated with this code:
+\begin{verbatim}
+\begin{tabular}{|l|r|c||p{1.5cm}|}
+\hline
+left justified & right justified & 
+centered & width specified \\
+\hline
+\hline
+\end{tabular}
+\end{verbatim}
+
+\begin{tabular}{|l|r|c||p{1.5cm}|} 
+%%  Note that a table is called a tabular! 
+%%  The character | declares that a vertical line should separate 
+%%  two columns. || means, two vertical lines etc. 
+%%  The character l creates a left justified column with a width just
+%%  enough to contain the longest line of text in the column. 
+%%  The character r is analog with l but text is right justified. 
+%%  The character c is analog with l but text is centered. 
+%%  p{1.5cm} generates a column with width 1.5cm with left justified text.
+\hline
+%%  Generated a horizontal line
+left justified & right justified & centered & width specified \\
+%%  The character & skips to next column
+%%  \\ ends the current row, all rows must be ended with \\
+\hline
+\hline
+\end{tabular}
+
+
+Text may be formatted with italics, bold face etc. inside a table. 
+However, as we can clearly see from the appearance of this page, the
+placing of the table is not correct. It almost overlaps with the text
+of this paragraph. Tables should always be placed in a special environment
+called a \emph{float}. A float contains a table or a figure and ensures
+that it is placed correctly in the document. If there is not enough space
+on a page to place a float, the float \emph{floats} over to the next 
+page, hence the name. Now, we place the table inside a float:
+
+\begin{table}[h] 
+%%  Creates a float that contains a table
+%%  The character h read `here' and specifies that the float should appear
+%%  at the same place in the text as where it was typed. 
+%%  Other options are 't' for top of page, 'b' for bottom of page and 'p'
+%%  for a special floats page, i.e. an empty page with only the table on
+%%  (and other floats that might fit onto the same page)
+%%
+\begin{center} 
+%%   Centers the table in the float
+%%
+\begin{tabular}{|l|r|c||p{1.5cm}|}
+\hline
+left justified & right justified & centered &
+width\newline specified \\
+\hline
+\hline
+\end{tabular}
+\end{center}
+%%  End the centering
+%%
+\caption{My table}
+%%  Gives a explanatory text/a name to the table in the float
+\label{tab:my-table}
+%%  See the cross referencing section for above command
+\end{table}
+%%  End the table
+
+Much better, don't you think? Note that we have also given the
+float a caption. Since the float was a table float (examine the code), 
+the caption automatically becomes the text `Tabell'. This would not
+be possible if we did not place the table in a float since then, 
+\LaTeX{} cannot determine where the table and the explanatory text
+begins or ends. 
+
+\begin{table}[t] 
+\begin{center} 
+\begin{tabular}{c|p{10cm}}
+\hline
+\textsf{c} & \textsf{p} \\
+\hline
+1      &  lines inside a column with a specified width will be broken
+        automatically if their length exceeds the width of the 
+        column. This is not the case for centered, left justified
+        or right justified columns where lines must be broken by
+        hand \\
+10    & Ten \\
+1000  & Thousand \\
+\hline
+\end{tabular}
+\end{center}
+\caption{This table is autmatically placed at the top of the page 
+where it appears in the code} 
+\end{table}
+
+\section{Figures}
+\label{includegraphics}
+%%  Labels are used to create references in a document, labels will
+%%  be explained later
+%%
+Figures should also be placed in floats and be given captions. Figures
+should contain diagrammes etc. Figures are included with the use of 
+this command: 
+
+\begin{verbatim}
+\includegraphics[options]{name of .EPS file}
+\end{verbatim}
+
+Where the options are a list of keys with values separated with commas:
+
+\begin{description}
+%%  This is a list, lists will be explained in a little while
+%%
+\item[scale=] 
+A scale factor from in per cent.
+
+\item[angle=] 
+An angle
+
+\item[bb=] 
+Creates a \emph{bounding box}, i.e. a rectangle within the included 
+image. Everything outside the bounding box is omitted. A bounding box
+is specified by four values, first the x and y values of the lower left
+corner and then the x and y values of the upper right corner. 
+
+\item[clip=] 
+True or false. Specifies if the the contents outside of the bounding box
+should be omitted or not. 
+
+\end{description}
+
+The figures on the next page were imported with the following commands: 
+
+\begin{verbatim}
+\includegraphics[scale=.25]{sample.eps}
+\includegraphics[scale=.50]{sample.eps}
+\includegraphics{sample.eps}
+\includegraphics[angle=45]{sample.eps}
+\includegraphics[bb=4mm 0mm 17mm 17mm, clip=true]{sample.eps}
+\end{verbatim}
+
+They all reside in the same float. The last image is clipped by the use of 
+a bounding box. Normally, using a bounding box is not necessary. 
+
+\begin{figure}[!t]
+%%   This is a figure float, it works exactly as a table float but writes
+%%  'Figur' instead of 'Tabell' in the caption. 
+\begin{center}
+\includegraphics[scale=.25]{sample.eps}
+\includegraphics[scale=.50]{sample.eps}
+\includegraphics{sample.eps}
+\includegraphics[angle=45]{sample.eps}
+\includegraphics[bb=4mm 0mm 17mm 17mm, clip=true]{sample.eps}
+\end{center}
+\caption{The same figure included five times}
+\end{figure}
+
+\section{Lists}
+\LaTeX{} supports the generation of lists in many ways; there are bullet 
+lists, enumerated lists, descriptive lists etc. Below, the most common lists
+are shown. Look at the source code to see how they are generated. 
+
+\subsubsection{Bullet list}
+\begin{itemize}
+\item 
+In a bullet list, all list items are preceeded by a bullet, $\bullet$
+
+\begin{itemize}
+\item 
+Lists can be nested, i.e. a list item can contain a new list (even 
+of a different kind). Note how the appearence of the nested list changes. 
+
+\end{itemize}
+
+\item 
+New items are automagically indented 
+\end{itemize}
+
+\subsubsection{Enumerated list}
+\begin{enumerate}
+\item 
+In a enumerated list all list items are preceeded with a number. 
+
+\begin{enumerate}
+\item 
+In nested enumerations, different enumeration styles are used. 
+
+\begin{enumerate}
+\item 
+A maximum of four levels of nesting is supported. 
+
+\end{enumerate}
+
+\end{enumerate}
+
+\item 
+New items are automagically indented 
+\end{enumerate}
+
+\subsubsection{Descriptive list}
+\begin{description}
+
+\item[Descriptive list] A descriptive list is a list where each
+item has a name written in bold face.  Note how a descriptive list
+was used to show the options of includegraphics in Section
+\ref{includegraphics}, page \pageref{includegraphics}.
+%%  \ref and \pageref are used to refer to different places inside a document
+%%  their usage will be explained in a little while
+\end{description}
+
+\section{Floats}
+Just a short note on floats. Always place tables and figures in
+floats.  Use table floats for tables and figure floats for
+figures. Look at the source code on lines 162 and 265. Read the
+comments and experiment!
+
+\section{Structuring your documents}
+This purpose of this document is to be a guide to formatting
+documents in \LaTeX. To be readable codewise -- it is very badly
+structured (even technically). When you write your own documents
+in \LaTeX{} you must not be as sloppy as this.
+
+\subsection{File inclusion}
+A document can be divided into several different files to
+facilitate different people working at the same document at the
+same time. Files are included with the command:
+%
+\begin{verbatim}
+\input{file name} 
+\end{verbatim}
+
+File name must be without spaces and file extension (extension
+\emph{must} be \textsc{tex}). If a file is placed in another
+directory, the entire path from the main file to the included file
+must be specified, \emph{e.g.}\ ``\texttt{../../../myfile}''.
+
+\subsection{Cross referencing}
+In large documents (such as those that you are about to write) 
+it is often necessary to refer to a different place in the
+text. This is easy in \LaTeX{} with the commands:
+%
+\begin{verbatim}
+\label{name} 
+\ref{name}
+\pageref{name}
+\end{verbatim}
+
+The \verb.\label. command associates a name with a place in the
+document text.  This can be issued almost everywhere. By using
+\verb.\ref., the number of the section (or float or list item
+number etc.) where the label appeared is printed;
+\verb.\pageref. prints the number of page where the label appeared
+is printed.  Depending on where the \verb.\label. was issued,
+different numbers appear.  Experiment! Look at lines 220 and 329
+in the source code for an example.
+
+\subsection{Citation with the bibliography}
+Hopefully, you will divide your project documentation into several
+different documents. Needless to say, you will sometimes (or quite
+often) need to refer between these documents, e.g. to say that X
+is explained in Y etc.
+
+To refer to external documents, you must first create a
+bibliography (litteraturförteckning) of documents that you
+wish to refer. A bibliography is included at the end of this
+document (look at the source code to see how it is constructed).
+
+To refer to an external document, the command \verb.\cite. is
+used. It works analogously with \verb.\ref. except that there is
+no corresponding label. Instead, the names that may be cited are
+specified by the bibliography at the end of the document. The
+bibliography at the end of this document contains three documents
+with the names `gof-patterns', `captain69' and `template'. Either
+of these names can be used by cite. For example,
+\verb.\cite{captain69}. produces \cite{captain69}.
+%%  Here, \cite is used with a label from the bibliography at the end
+%%  of the document
+
+In text, you usually write, `\ldots for a more detailed
+description of the proxy-pattern, see \cite{gof-patterns}\ldots'
+
+When referring to your own documents, you generally need to
+specify more exactly the location of the text to which you are
+referring, e.g. `\ldots for a more detailed description of the
+proxy-pattern, see \cite[pp. 257-263]{gof-patterns}\ldots'
+
+This is achieved by \verb,\cite[pp. 257-263]{gof-patterns},. The
+text in the brackets can be any text, not necessarily page
+numbers.
+
+
+\subsection{Table of contents}
+In \LaTeX{}, a table of contents is easily generated by issuing
+the command
+
+\begin{verbatim}
+\tableofcontents
+\end{verbatim}
+
+The table of contents in the course documentation is automatically
+generated using this command. (Exercise: insert it in this
+document and see the results -- note that the \LaTeX\ compiler
+will tell you to rerun the compilation at least one time!)
+
+\section{Line breaking}
+In \LaTeX{}, line breaking is a real issue. This is due to that
+\LaTeX{} must obey a number of typographic rules that is embedded
+in the system. In some cases, e.g. \LaTeX{} don't know how to
+break a very long word, it is necessary to manually hyphenate or
+break the line by hand. There are a couple of different approaches
+to this. The line below illustrates one problem: \\[3mm]
+%%  Note that you can specify how tall a line break should be 
+%%
+1)~~Thislinedoesnotcontainanyspacesandwhen{\LaTeX}triestobreakititwillhaveproblems. 
+%%  The character ~ is a `hard space' that will not be compacted by LaTeX
+%%   always use hard spaces (also in Microsoft Word!) when writing e.g. 1~000 kr 
+%%  to avoid line breaking between 1 and 000. 
+%%
+
+\begin{description}
+\item[hyhenation] 
+  When \LaTeX{} doesn't know how to hyphenate a word, you can do
+  it manually with a special (soft) hyphen, \verb.\-.. This will
+  insert a hyphen \emph{if necessary}.  If the text is altered
+  later and suddenly, the long word fits into one line without
+  hyphenation, the hyphenation will not be inserted. A long word
+  could have many soft hyphens to enable hyphenation at several
+  different places.
+
+\item[linebreak] 
+  The command \verb.\linebreak. or \verb.\linebreak[num]. breaks a
+  line and justifies the margins. If you use
+  \verb.\linebreak[num]., you must specify a number between 0 and
+  4 that is an indication of how much you want the line broken
+  (higher number indicates higher need for line breaking). This
+  enables the removal of deprecated line breaks that are no longer
+  necessary due to subsequent changes in the text.
+
+\item[newline] 
+  The command \verb.\newline. breaks a line. There is a shorthand
+  for \verb.\newline.  in the command \verb.\\. or
+  \verb.\\[length].. The latter breaks a line but also specifies
+  how much whitespace should be inserted before next paragraph.
+
+  Sometimes, \LaTeX\ is unable to justify the right margin of a
+  section, simply because there is not enough words on the for
+  \LaTeX\ to insert enough space between so to give the line the
+  desired length. This is signalled by the \LaTeX-compiler as an
+  ``underful hbox''.
+
+  There is one such example in this document in the last column in
+  the Table \pageref{tab:my-table}.  Look in the code on the first
+  table on the same page to see the use of \verb.\newline. (line
+  175 in the code). You may also want to look at the output of a
+  compiler, fix the faulty table and recompile. Note that,
+  depending on the situation, \verb.\linebreak. might actually be
+  the solution (if you want the justified margins). This command
+  does not, however, stretch the length of a word. 
+
+\end{description}
+
+\section{Running \LaTeX}
+This is a brief explanation of how to transform a \textsc{tex}
+source file into a viewable/printable document.  \LaTeX{} is
+invoked from the command line with the main file as single
+parameter:
+%
+\begin{verbatim}
+$ernst-hugo>latex my-file
+\end{verbatim}
+
+This will cause the file to be `compiled' (in some cases it must
+be compiled several times due to forward references etc., in this
+case \LaTeX{} will print a message indicating that the file should
+be recompiled) and produce a viewable file called a \textsc{dvi}
+file (DeVice Independent). If there are any compiler errors, these
+will be reported and the compilation aborted (without producing a
+\textsc{dvi} file). The \textsc{dvi} file is viewed with the
+command:
+
+\begin{verbatim}
+$ernst-hugo>xdvi my-file.dvi
+\end{verbatim}
+
+Some machines may have additional (and better) programs for
+viewing \textsc{dvi} files, like \texttt{kdvi} (available in the k
+desktop system, \url{www.kde.org}).
+
+After a \textsc{dvi} file is produced, another program called
+\texttt{dvips} is used to produce a postscript file or feed it to
+the printer. To create a postscript file from a \textsc{dvi} file
+(that can be emailed to your contractor):
+%
+\begin{verbatim}
+$ernst-hugo>dvips -ta4 -Ppdf -ooutfile.ps my-file.dvi
+\end{verbatim}
+
+This will cause the contents of my-file.dvi to be printed to the
+postscript file \texttt{outfile.ps}.
+
+\textbf{Please be careful when using \texttt{dvips}! If you forget
+the \texttt{-o} flag, your prints will be spooled to the printer
+instead of to a PostScript file!}
+
+To print the contents of a \textsc{dvi} file to a printer:
+%
+\begin{verbatim}
+$ernst-hugo>dvips -ta4 my-file.dvi
+\end{verbatim}
+
+To convert a \textsc{ps} file to a \textsc{pdf} file:
+%
+\begin{verbatim}
+$ernst-hugo>ps2pdf13 mypsfile.ps 
+\end{verbatim}
+
+This creates a new \textsc{pdf} file names \texttt{mypsfile.pdf}.
+
+If \texttt{ps2pdf13} is not available, but \texttt{ps2pdf} is,
+then the same result can be achieved using \texttt{ps2pdf
+  -dCompatibility=1.3 myfile.ps}. 
+
+\section{How do I start?}
+Copy the first 61 lines of this file and add a
+\verb.\end{document}.. Strip the comments if you think that you
+don't need them. This should compile just fine.  Alter the title,
+author and date. Now you have a one-page \LaTeX{} document with
+only the titlepage. Now, start writing between
+\verb.\begin{document}. and \verb.\end{document}.. The
+bibliography is easily copied from this document into your new
+document and the contents of the bibitems altered\footnote{Tip:
+you can use the same bibliography file for all documents and just
+include it with the input command. Or better still, learn
+Bib\TeX, which is a very potent powerful bibliography system for
+\LaTeX.}. Good luck!
+
+\paragraph{Comment}
+On the course DSV2:PVT, all documentation managers will be
+supplied with a copy of `The not so short guide to \LaTeX' and
+also be given an introduction on how to run \LaTeX{} and write a
+small \textsc{tex} file. It might be a good idea to assign a
+project member to work out the details of \LaTeX{} that you think
+you need. That way, you will produce a local expert that can be
+called in to solve \LaTeX{} problems as they arise.
+
+\begin{thebibliography}{99}
+%%  Start of bibliography. It works almost exactly like a list, but with 
+%%  \bibitem instead of \item. 
+%%
+\bibitem{gof-patterns} 
+    \textit{Design Patterns, Elements of Reusable
+    Object-Oriented Software}.
+    Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides. 
+    Addison-Wesley 1995.
+
+\bibitem{captain69} 
+    \textit{Safe as Milk}. 
+    Captain Beefheart, Zoot Horn Rollo, Winged Eel Fingerling, 
+    Alex Snouffler, John French. 
+    Budda Records 1969.
+
+\bibitem{template} 
+%%  Gives a name for citations to the following document, in this case `template'
+%%  
+    \textit{Title of document}. 
+    List of authors in the order they appear in the document 
+    Name of publisher, or other remark and year of publication. 
+    Document number or version number is good to include. 
+\end{thebibliography}
+\end{document}
+
+\end{document}
+%%  The end of the document
+%%
