@@ -1,0 +1,28 @@
+\select@language {swedish}
+\contentsline {section}{\numberline {1}Introduktion}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Systemets sammanhang}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Anv\IeC {\"a}ndargrupp}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Analysavgr\IeC {\"a}nsning}{3}{subsection.1.3}
+\contentsline {section}{\numberline {2}Metod}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Anv\IeC {\"a}ndare}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Unders\IeC {\"o}kningsmilj\IeC {\"o}}{4}{subsection.2.2}
+\contentsline {section}{\numberline {3}Resultat}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Anv\IeC {\"a}ndarsyfte}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Anv\IeC {\"a}ndarkontext}{6}{subsection.3.2}
+\contentsline {section}{\numberline {4}Diskussion}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Funktionsm\IeC {\"a}ssiga problem}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Utseendem\IeC {\"a}ssigt}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Mindre anv\IeC {\"a}ndbarhets problem}{8}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Stora anv\IeC {\"a}ndbarhets problem}{8}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Positiv \IeC {\r a}terkoppling}{8}{subsection.4.5}
+\contentsline {section}{\numberline {5}Designimplikationer}{9}{section.5}
+\contentsline {section}{\numberline {6}Designteorier}{10}{section.6}
+\contentsline {subsection}{\numberline {6.1}Mentala representationer}{10}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Perception}{10}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}M\IeC {\"o}nsterigenk\IeC {\"a}nning}{10}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Kunskap och k\IeC {\"a}nnedom}{11}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Affordans och gestaltningslagar}{11}{subsection.6.5}
+\contentsline {section}{\numberline {7}V\IeC {\r a}r nya design}{12}{section.7}
+\contentsline {section}{\numberline {8}Alternativa design}{19}{section.8}
+\contentsline {section}{\numberline {9}Appendix}{20}{section.9}
+\contentsline {section}{\numberline {10}K\IeC {\"a}llor}{23}{section.10}

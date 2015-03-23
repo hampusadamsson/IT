@@ -1,0 +1,29 @@
+\select@language {swedish}
+\contentsline {section}{\numberline {1}Abstract}{2}{section.1}
+\contentsline {section}{\numberline {2}Introduktion}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Systemets sammanhang}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Anv\IeC {\"a}ndargrupp}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Analysavgr\IeC {\"a}nsning}{4}{subsection.2.3}
+\contentsline {section}{\numberline {3}Metod}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Anv\IeC {\"a}ndare}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Unders\IeC {\"o}kningsmilj\IeC {\"o}}{5}{subsection.3.2}
+\contentsline {section}{\numberline {4}Resultat}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Anv\IeC {\"a}ndarsyfte}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Anv\IeC {\"a}ndarkontext}{7}{subsection.4.2}
+\contentsline {section}{\numberline {5}Diskussion}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1}Funktionsm\IeC {\"a}ssiga problem}{8}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Utseendem\IeC {\"a}ssigt}{8}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Mindre anv\IeC {\"a}ndbarhets problem}{9}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Stora anv\IeC {\"a}ndbarhets problem}{9}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Positiv \IeC {\r a}terkoppling}{9}{subsection.5.5}
+\contentsline {section}{\numberline {6}Designimplikationer}{10}{section.6}
+\contentsline {section}{\numberline {7}Designteorier}{11}{section.7}
+\contentsline {subsection}{\numberline {7.1}Mentala representationer}{11}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Perception}{11}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}M\IeC {\"o}nsterigenk\IeC {\"a}nning}{11}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Kunskap och k\IeC {\"a}nnedom}{12}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Affordans och gestaltningslagar}{12}{subsection.7.5}
+\contentsline {section}{\numberline {8}V\IeC {\r a}r nya design}{13}{section.8}
+\contentsline {section}{\numberline {9}Alternativa design}{20}{section.9}
+\contentsline {section}{\numberline {10}Appendix}{21}{section.10}
+\contentsline {section}{\numberline {11}K\IeC {\"a}llor}{24}{section.11}
