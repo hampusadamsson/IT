@@ -23,5 +23,6 @@
 \contentsline {subsection}{\numberline {6.4}Kunskap och k\IeC {\"a}nnedom}{11}{subsection.6.4}
 \contentsline {subsection}{\numberline {6.5}Affordans och gestaltningslagar}{11}{subsection.6.5}
 \contentsline {section}{\numberline {7}V\IeC {\r a}r nya design}{12}{section.7}
-\contentsline {section}{\numberline {8}Appendix}{19}{section.8}
-\contentsline {section}{\numberline {9}K\IeC {\"a}llor}{22}{section.9}
+\contentsline {section}{\numberline {8}Alternativa designer}{18}{section.8}
+\contentsline {section}{\numberline {9}Appendix}{20}{section.9}
+\contentsline {section}{\numberline {10}K\IeC {\"a}llor}{23}{section.10}

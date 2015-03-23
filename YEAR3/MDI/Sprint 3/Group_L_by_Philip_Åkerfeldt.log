@@ -1,5 +1,7 @@
-This is LuaTeX, Version beta-0.76.0-2013121407 (rev 4627)  (format=lualatex 2015.3.3)  6 MAR 2015 18:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.3)  12 MAR 2015 11:12
+entering extended mode
  restricted \write18 enabled.
+ %&-line parsing enabled.
 **Group_L_by_Philip_Åkerfeldt.tex
 (./Group_L_by_Philip_Åkerfeldt.tex
 LaTeX2e <2011/06/27>
@@ -252,10 +254,7 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 File: babel.def 2013/12/03 3.9h Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/luababel.def
-luatex-hyphen: using data file: /var/lib/texmf/tex/generic/config/language.dat.l
-ua))
+)
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -357,46 +356,24 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
-
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX detected.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/luatex-loader.sty
-Package: luatex-loader 2010/03/09 v0.4 Lua module loader (HO)
-
-(/usr/share/texlive/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua))
-\pdftexcmds@toks=\toks27
-)
 \Gread@gobject=\count100
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count101
-\float@exts=\toks28
+\float@exts=\toks27
 \float@box=\box28
-\@float@everytoks=\toks29
+\@float@everytoks=\toks28
 \@floatcapt=\box29
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks30
+\KV@toks@=\toks29
 )
 \lst@mode=\count102
 \lst@gtempboxa=\box30
-\lst@token=\toks31
+\lst@token=\toks30
 \lst@length=\count103
 \lst@currlwidth=\dimen113
 \lst@column=\count104
@@ -444,24 +421,35 @@ Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
+
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
-Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
-Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-Package hobsub Info: Skipping package `luatex-loader' (already loaded).
-Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO)
-
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
 Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
 Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
@@ -539,8 +527,8 @@ File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
-2.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
 )
 \Hy@SectionHShift=\skip50
 )
@@ -548,6 +536,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \bigstrutjot=\dimen123
 )
 (./Group_L_by_Philip_Åkerfeldt.aux)
+\openout1 = `Group_L_by_Philip_Åkerfeldt.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
@@ -570,12 +560,12 @@ LaTeX Font Info:    ... okay on input line 35.
 \scratchbox=\box32
 \nofMPsegments=\count121
 \nofMParguments=\count122
-\everyMPshowfont=\toks32
+\everyMPshowfont=\toks31
 \MPscratchCnt=\count123
 \MPscratchDim=\dimen125
 \MPnumerator=\count124
 \makeMPintoPDFobject=\count125
-\everyMPtoPDFconversion=\toks33
+\everyMPtoPDFconversion=\toks32
 )
 \c@lstlisting=\count126
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -585,13 +575,13 @@ Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG
-,.JBIG2,.JB2,.eps]
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
 ))
 \AtBeginShipoutBox=\box33
 Package hyperref Info: Link coloring OFF on input line 35.
@@ -610,6 +600,8 @@ LaTeX Info: Redefining \nameref on input line 35.
 
 (./Group_L_by_Philip_Åkerfeldt.out) (./Group_L_by_Philip_Åkerfeldt.out)
 \@outlinefile=\write3
+\openout3 = `Group_L_by_Philip_Åkerfeldt.out'.
+
 LaTeX Font Info:    Try loading font information for U+msa on input line 37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -624,7 +616,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Group_L_by_Philip_Åker
 feldt.toc)
 \tf@toc=\write4
- [2]
+\openout4 = `Group_L_by_Philip_Åkerfeldt.toc'.
+
+
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 43--46
 
  []
@@ -634,14 +629,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
  []
 
-<Diagram1.png, id=111, 1020.81375pt x 277.035pt>
+<Diagram1.png, id=110, 1020.81375pt x 277.035pt>
 File: Diagram1.png Graphic file (type png)
  <use Diagram1.png>
 Package pdftex.def Info: Diagram1.png used on input line 55.
 (pdftex.def)             Requested size: 510.40562pt x 138.51715pt.
 
 Overfull \hbox (57.43773pt too wide) in paragraph at lines 55--56
- [][][] 
+ [][] 
  []
 
 [3 <./Diagram1.png>] [4] [5] [6] [7]
@@ -655,34 +650,32 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
  (./Group_L_by_Philip_Åkerfeldt.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
-Package rerunfilecheck Info: File `Group_L_by_Philip_Åkerfeldt.out' has not cha
-nged.
+Package rerunfilecheck Info: File `Group_L_by_Philip_Åkerfeldt.out' has not ch
+anged.
 (rerunfilecheck)             Checksum: 9D4717F82A79E64D3EE3B241E37AB60C;1240.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
- )
-
-Here is how much of LuaTeX's memory you used:
- 8895 strings out of 494461
- 100000,552014 words of node,token memory allocated
- 353 words of node memory still in use:
-   5 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 44 glue_spec, 1 write nodes
-   avail lists: 2:21,3:124,4:888,5:220,6:3293,7:91,8:21,9:122,10:242
- 12116 multiletter control sequences out of 65536+600000
- 58 fonts using 2290919 bytes
- 29i,8n,32p,986b,338s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-tt10.pfb>
-Output written on Group_L_by_Philip_Åkerfeldt.pdf (8 pages, 156972 bytes).
-
-PDF statistics: 184 PDF objects out of 1000 (max. 8388607)
- 162 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 131072)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ ) 
+Here is how much of TeX's memory you used:
+ 8282 strings out of 494424
+ 115761 string characters out of 6165347
+ 207250 words of memory out of 5000000
+ 11372 multiletter control sequences out of 15000+600000
+ 14363 words of font info for 55 fonts, out of 8000000 for 9000
+ 372 hyphenation exceptions out of 8191
+ 29i,8n,32p,987b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmtt10.pfb>
+Output written on Group_L_by_Philip_Åkerfeldt.pdf (8 pages, 156551 bytes).
+PDF statistics:
+ 188 PDF objects out of 1000 (max. 8388607)
+ 166 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 
