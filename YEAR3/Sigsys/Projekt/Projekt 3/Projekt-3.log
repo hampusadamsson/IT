@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.3)  13 MAR 2015 21:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.3)  30 MAR 2015 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -699,15 +699,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
 (./Projekt-3.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
-
-
-Package rerunfilecheck Warning: File `Projekt-3.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Projekt-3.out':
-(rerunfilecheck)             Before: 0CFE46147187EB5989F6B46CF15506FD;351
-(rerunfilecheck)             After:  FD6B6C6207DE1F8AF7C598147156659B;344.
+Package rerunfilecheck Info: File `Projekt-3.out' has not changed.
+(rerunfilecheck)             Checksum: FD6B6C6207DE1F8AF7C598147156659B;344.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 223.
  ) 
 Here is how much of TeX's memory you used:
